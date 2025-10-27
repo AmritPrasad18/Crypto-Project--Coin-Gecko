@@ -3,12 +3,13 @@ import  fetchCoinData  from "../../services/fetchCoinData";
 import { useQuery } from "@tanstack/react-query";
 // import { CurrencyContext } from "../../Context/CurrencyContext";
 import store from "../../Zustand/Zustand";
-import { useState } from "react";
+import { useState  } from "react";
 import { useNavigate } from "react-router-dom";
 import ContentLoader from "react-content-loader";
 
 
 function CoinTable() {
+    
 
     const navigate = useNavigate();
 

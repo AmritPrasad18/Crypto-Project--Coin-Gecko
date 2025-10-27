@@ -4,6 +4,7 @@ import { lazy ,  Suspense} from "react";
 import React from "react";
 import MainLayout from "../Layout";
 import MyLoader from "../Loader/PageLoader";
+import CustomErrorBoundry from "../../Component/CustomErrorBoundry/CustomErrorBoundry";
 
 
 
@@ -16,6 +17,7 @@ const CoinDetailsPage = lazy(
 
 function Routing(){
     return(
+        <CustomErrorBoundry>
         <Routes>
             
             <Route path="/" element={<MainLayout/>} >
@@ -38,6 +40,7 @@ function Routing(){
             </Route>
 
         </Routes>
+        </CustomErrorBoundry>
     )
 }
 
