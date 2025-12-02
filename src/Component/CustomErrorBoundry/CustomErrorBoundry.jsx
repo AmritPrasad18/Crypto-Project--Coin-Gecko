@@ -1,7 +1,7 @@
 import { ErrorBoundary } from "react-error-boundary";
 import React from "react";
 
-function CustomErrorBoundryUi({error , resetErrorBoundary}){
+function CustomErrorBoundryUi({error , resetErrorBoundary}){ //these props are automatically given by  Boundary Component from Erroreact-error-boundary component
     return(
         <div className="h-[200vw] flex justify-center items-center px-6">
             <div role="alert" className="alert alert-error">
